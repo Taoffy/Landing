@@ -76,7 +76,7 @@ header {
   display: none;
   width: 60px;
   height: 45px;
-  margin-top: 30px;
+  margin-top: 32px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -112,11 +112,11 @@ header {
 }
 
 #nav-icon span:nth-child(2) {
-  top: 18px;
+  top: 14px;
 }
 
 #nav-icon span:nth-child(3) {
-  top: 36px;
+  top: 28px;
 }
 
 #nav-icon.open span:nth-child(1) {
