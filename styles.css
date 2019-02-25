@@ -469,9 +469,7 @@ header {
   left: 1045px;
 }
 
-.examples_slick-list_item_photo {
-  max-width: 370px;
-  min-width: 282px; 
+.examples_slick-list_item_photo { 
   height: 290px;
 }
 
@@ -810,7 +808,16 @@ header {
     top: 170px;
   }
 }
+@media(max-width: 768px) {
+  .examples_slick-list_item_text {
+    font-size: 18px;
+  }
+}
 @media(max-width: 636px) {
+  .examples_text {
+    font-size: 30px;
+    text-align: center;
+  }
   .clearfix {
     width: 0%;
   }
