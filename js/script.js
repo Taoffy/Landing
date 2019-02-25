@@ -24,14 +24,9 @@ $(function(){
 });
 
 $(document).ready(function(){
-	$('#nav-icon').click(function(){
-		$(this).toggleClass('open');
-	});
-});
-
-$(function(){
 	$('.menu-mob').hide();
 	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
 		$('.menu-mob').fadeToggle('slow', 'linear');
-	})
-})
+	});
+});

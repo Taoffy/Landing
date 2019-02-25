@@ -74,7 +74,7 @@ header {
 
 #nav-icon {
   display: none;
-  width: 60px;
+  width: 45px;
   height: 45px;
   margin-top: 32px;
   -webkit-transform: rotate(0deg);
@@ -94,7 +94,6 @@ header {
   height: 5px;
   width: 100%;
   background: #f82370;
-  border-radius: 9px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -120,7 +119,7 @@ header {
 }
 
 #nav-icon.open span:nth-child(1) {
-  top: 18px;
+  top: 14px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
@@ -133,7 +132,7 @@ header {
 }
 
 #nav-icon.open span:nth-child(3) {
-  top: 18px;
+  top: 14px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
@@ -742,6 +741,16 @@ header {
   }
   .head__call-order-mob {
     display: block;
+  }
+  #nav-icon {
+    width: 30px;
+    margin-top: 38px;
+  }
+  #nav-icon span:nth-child(2) {
+    top: 10px;
+  }
+  #nav-icon span:nth-child(3) {
+    top: 20px;
   }
 }
 @media(max-width: 556px) {
