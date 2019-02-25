@@ -685,18 +685,34 @@ header {
   padding: 33px 0;
 }
 
+@media(max-width: 1818px) {
+  .about-me__fly-el-brackets {
+    left: 100px;
+  }
+  .about-me__fly-el-div_size-m {
+    display: none;
+  }
+}
 @media(max-width: 1509px) {
   .about-me__myname {
     font-size: 54px;
   }
 }
 @media(max-width: 1200px) {
+  .about-me__myname, .about-me__profession {
+    text-align: center;
+  }
+  .about-me__learn-more {
+    display: block;
+    margin: 0 auto;
+  }
   .arrow {
     display: none !important;
   }
   .container {
     padding: 0 40px;
   }
+
   .what-i-do__examples {
     flex-wrap: wrap;
   }
@@ -706,7 +722,24 @@ header {
   #nav-icon {
     display: block;
   }
-
+  .about-me__fly-el-brackets {
+    left: 270px;
+    top: 100px;
+    animation: none;
+  }
+  .about-me__fly-el-div_size-s {
+    left: 720px;
+    top: 20px;
+    animation: none;
+  }
+  .about-me__fly-el-hashtag {
+    top: 570px;
+    left: 150px;
+    animation: none;
+  }
+  .about-me__fly-el-element1 {
+    animation: none;
+  }
 }
 @media(max-width: 1000px) {
   .cost__desc, .cost__appli {
@@ -752,6 +785,23 @@ header {
   #nav-icon span:nth-child(3) {
     top: 20px;
   }
+  .about-me__fly-el-brackets {
+    position: absolute;
+    left: 100px;
+    top: 200px;
+  }
+  .about-me__fly-el-div_size-s {
+    display: none;
+  }
+  .about-me__fly-el-hashtag {
+    position: absolute;
+    top: 500px;
+    left: 80px;
+  }
+  .about-me__fly-el-element1 {
+    position: absolute;
+    top: 170px;
+  }
 }
 @media(max-width: 556px) {
   .about-me__photo {
@@ -760,6 +810,20 @@ header {
   .about-me__photo img {
     top: 0;
     padding-left: 0;
+  }
+  .about-me__fly-el-brackets {
+    position: absolute;
+    left: 70px;
+    top: 100px;
+  }
+  .about-me__fly-el-hashtag {
+    position: absolute;
+    top: 350px;
+    left: 80px;
+  }
+  .about-me__fly-el-element1 {
+    position: absolute;
+    top: 170px;
   }
 }
 @media(max-width: 490px) {
@@ -788,6 +852,18 @@ header {
   }
   .about-me__learn-more {
     margin-left: 10px;
+  }
+  .about-me__fly-el-brackets {
+    font-size: 22px;
+    top: 150px;
+  }
+  .about-me__fly-el-element1 {
+    font-size: 16px;
+    right: 100px;
+  }
+  .about-me__fly-el-hashtag {
+    font-size: 28px;
+    top: 250px;
   }
 }
 @media (max-width: 380px) {
