@@ -396,7 +396,7 @@ header {
 }
 
 .example {
-  max-width: 270px;
+  width: 270px;
 }
 
 .example_text {
@@ -712,9 +712,15 @@ header {
   .container {
     padding: 0 40px;
   }
-
   .what-i-do__examples {
     flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .example:first-child {
+    margin-bottom: 85px;
+  }
+  .clearfix {
+    width: 100%;
   }
   .navbar {
     display: none;
@@ -760,6 +766,7 @@ header {
   .about-me {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .about-me__how-am-i {
     padding: 0;
@@ -803,6 +810,20 @@ header {
     top: 170px;
   }
 }
+@media(max-width: 636px) {
+  .clearfix {
+    width: 0%;
+  }
+  .what-i-do__examples {
+    justify-content: center;
+  }
+  .example {
+    margin-bottom: 55px;
+  }
+  .example:last-child {
+    margin-bottom: 0;
+  }
+}
 @media(max-width: 556px) {
   .about-me__photo {
     flex-basis: 400px;
@@ -827,6 +848,13 @@ header {
   }
 }
 @media(max-width: 490px) {
+  .container {
+    padding: 0 20px;
+  }
+  .what-i-do__text {
+    font-size: 30px;
+    text-align: center;
+  }
   .cost__desc {
     font-size: 28px;
     line-height: 1.5;
@@ -844,14 +872,9 @@ header {
   }
   .about-me__myname {
     font-size: 30px;
-    text-align: center;
   }
   .about-me__profession {
     font-size: 16px;
-    text-align: center;
-  }
-  .about-me__learn-more {
-    margin-left: 10px;
   }
   .about-me__fly-el-brackets {
     font-size: 22px;
