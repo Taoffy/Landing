@@ -455,6 +455,8 @@ header {
 }
 
 .about-me__myname {
+  display: block;
+  margin: 0;
   font-size: 80px;
   font-weight: 900;
 }
@@ -491,6 +493,7 @@ header {
 }
 
 .what-i-do__text {
+  display: block;
   max-width: 320px;
   font-size: 54px;
   font-weight: bold;
@@ -537,6 +540,7 @@ header {
 }
 
 .examples_text {
+  display: block;
   font-size: 54px;
   max-width: 560px;
   margin: 0 auto 100px;
@@ -685,11 +689,13 @@ header {
 }
 
 .cost__desc {
+  display: block;
   max-width: 950px;
   font-size: 45px;
   font-weight: bold;
   color: white;
   padding-top: 20px;
+  margin: 0;
 }
 
 .cost__appli {
@@ -713,12 +719,26 @@ header {
   list-style: none;
   padding-left: 0px;
   margin-top: 86px;
-  color: #8993ad;
   font-size: 18px;
 }
 
 .footer_nav_ul li {
   padding-bottom: 15px;
+}
+
+.footer_nav_ul a {
+  text-decoration: none;
+  color: #8993ad;
+}
+
+.footer_nav_ul a:visited {
+  text-decoration: none;
+  color: #8993ad;
+}
+
+.footer_nav_ul a:hover {
+  color: #fc557c;
+  text-decoration-line: underline;
 }
 
 .footer_nav_ul li:last-child {

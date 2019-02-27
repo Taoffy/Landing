@@ -35,7 +35,7 @@ $(function(){
 	    }]
 	});
 
-	$('.head__call-order, .footer_call-order').click(function() {
+	$('.head__call-order, .footer_call-order, .head__call-order-mob').click(function() {
 		$('.popup-container, .popup-container__callback').fadeIn(200);
 		disableScroll();
 	});
