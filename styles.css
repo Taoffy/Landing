@@ -974,6 +974,9 @@ header {
   .examples_slick-list_item_text {
     font-size: 18px;
   }
+  .examples_slick-list {
+    margin: 0;
+  }
   .cost__fly-el-brackets1, .cost__fly-el-div, .cost__fly-el-element {
     display: none;
   }
