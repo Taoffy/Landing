@@ -17,11 +17,32 @@
   <meta name="theme-color" content="#ffffff">
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/slick.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/script.js"></script>
   <title>Frontend-разработчик Андрей Терешин</title>
 </head>
 
 <body>
+  <div class="popup-container">
+    <div class="popup-container__callback">
+      <form class="popup-container__callback__form" method="POST">
+        <p class="popup-container__callback__form__text">Укажите свой телефон и я свяжусь с вами в ближайшее время.</p>
+        <input type="text" maxlength="30" placeholder="Ваше имя" class="popup-container__form__name">
+        <input type="phone" maxlength="11" placeholder="Телефон" class="popup-container__callback__form__phone">
+        <button type="submit" class="popup-container__callback__form__button">Заказать звонок</button>
+      </form>
+    </div>
+    <div class="popup-container__question">
+      <form class="popup-container__question__form" method="POST">
+        <p class="popup-container__question__form__text">Задавайте интересующие вас вопросы и я отвечу на них как можно скорее.</p>
+        <input type="text" maxlength="30" placeholder="Ваше имя" class="popup-container__form__name">
+        <input type="email" maxlength="40" placeholder="email-адрес" class="popup-container__question__form__email">
+        <textarea class="popup-container__question__form__textarea"></textarea>
+        <button type="submit" class="popup-container__question__form__button">Отправить</button>
+      </form>
+    </div>
+  </div>
+  
   <header>
     <div class="container head">
       <div id="nav-icon">
@@ -29,7 +50,7 @@
         <span></span>
         <span></span>
       </div>
-      <nav>
+      <nav class="head__menu">
         <ul class="navbar">
           <li class="navbar__link"><a href="#service">Услуги</a></li>
           <li class="navbar__link"><a href="#portfolio">Портфолио</a></li>

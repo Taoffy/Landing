@@ -63,6 +63,110 @@ html, body {
   margin: 0 auto;
 }
 
+.popup-container{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-image: url('img/bg.png');
+}
+
+.popup-container__callback {
+  display: none;
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 10% auto;
+}
+
+.popup-container__callback__form {
+  padding: 20px;
+}
+
+.popup-container__callback__form__text {
+  text-align: center;
+}
+
+.popup-container__form__name {
+  display: block;
+  margin: 20px auto;
+  padding: 5px 0 5px 10px;
+  width: 80%;
+  height: 24px;
+  outline: 0;
+  border: 1px solid #d96e5bbf;
+}
+
+.popup-container__callback__form__phone {
+  display: block;
+  margin: 20px auto;
+  padding: 5px 0 5px 10px;
+  width: 80%;
+  height: 24px;
+  outline: 0;
+  border: 1px solid #d96e5bbf;
+}
+
+.popup-container__callback__form__button {
+  cursor: pointer;
+  display: block;
+  padding: 15px 60px;
+  margin: 30px auto 0 auto;
+  border: none;
+  color: #fff;
+  background-color: #ff4e2e;
+  font-size: 18px;
+}
+
+.popup-container__question {
+  display: none;
+  height: 450px;
+  width: 500px;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+  margin: 10% auto;
+}
+
+.popup-container__question__form {
+  padding: 20px;
+}
+
+.popup-container__question__form__text {
+  text-align: center;
+}
+
+.popup-container__question__form__email {
+  display: block;
+  margin: 20px auto;
+  padding: 5px 0 5px 10px;
+  width: 80%;
+  height: 24px;
+  outline: 0;
+  border: 1px solid #d96e5bbf;
+}
+
+.popup-container__question__form__textarea {
+  resize: none;
+  display: block;
+  width: 80%;
+  height: 130px;
+  padding: 5px 0 5px 10px;
+  margin: 0 auto;
+}
+
+.popup-container__question__form__button {
+  cursor: pointer;
+  display: block;
+  padding: 15px 60px;
+  margin: 30px auto 0 auto;
+  border: none;
+  color: #fff;
+  background-color: #ff4e2e;
+  font-size: 18px;
+}
+
 header {
   background-color: #fbfbfb;
 }
@@ -906,6 +1010,15 @@ header {
   .about-me__fly-el-element1 {
     position: absolute;
     top: 170px;
+  }
+  .popup-container__callback, .popup-container__question {
+    width: 290px;
+  }
+  .popup-container__callback__form__phone, .popup-container__form__name, .popup-container__question__form__email {
+    width: 95%;
+  }
+  .popup-container__callback__form__button, .popup-container__question__form__button {
+    margin: 10px auto;
   }
 }
 @media(max-width: 490px) {
