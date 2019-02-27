@@ -1040,6 +1040,9 @@ header {
   .popup-container__callback__form__button, .popup-container__question__form__button {
     margin: 10px auto;
   }
+  .popup-container__callback__form__button {
+    font-size: 16px;
+  }
 }
 @media(max-width: 490px) {
   .container {
