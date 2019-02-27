@@ -156,6 +156,10 @@ header {
   padding-left: 20px;
 }
 
+.menu-mob__link:first-child {
+  padding-left: 0;
+}
+
 .menu-mob__link a {
   text-decoration: none;
   color: black;
@@ -531,7 +535,7 @@ header {
   font-weight: bold;
   position: relative;
   left: 246px;
-  top: 260px;
+  top: 270px;
   transform: rotate(15deg);
 }
 
@@ -539,9 +543,10 @@ header {
   display: inline-block;
   color: white;
   font-size: 38px;
+  float: right;
   font-weight: bold;
   position: relative;
-  left: 1659px;
+  right: 200px;
   top: 81px;
   transform: rotate(-25deg);
 }
@@ -551,8 +556,9 @@ header {
   color: white;
   font-size: 35px;
   font-weight: bold;
+  float: right;
   position: relative;
-  left: 1297px;
+  right: 400px;
   top: 295px;
   transform: rotate(30deg);
 }
@@ -562,8 +568,9 @@ header {
   color: white;
   font-size: 48px;
   font-weight: bold;
+  float: right;
   position: relative;
-  left: 1550px;
+  right: 150px;
   top: 262px;
   transform: rotate(160deg);
 }
@@ -692,6 +699,24 @@ header {
   }
 }
 @media(max-width: 1509px) {
+  .cost__fly-el-div {
+    font-size: 23px;
+    top: 260px;
+  }
+  .cost__fly-el-element {
+    top: 250px;
+    right: 95px;
+  }
+  .cost__fly-el-brackets1 {
+    top: 20px;
+    font-size: 29px;
+  }
+  .cost__fly-el-brackets2 {
+    display: none;
+  }
+  .cost__fly-el-hashtag {
+    display: none;
+  }
   .about-me__myname {
     font-size: 54px;
   }
@@ -750,6 +775,12 @@ header {
     margin-left: 19px;
     margin-right: 29px;
   }
+  .cost__fly-el-div {
+    top: 320px;
+  }
+  .cost__fly-el-element {
+    top: 290px;
+  }
 }
 @media(max-width: 848px) {
   .about-me__photo {
@@ -807,10 +838,33 @@ header {
     position: absolute;
     top: 170px;
   }
+  .footer_contacts_ul {
+    font-size: 20px;
+    color: #8993ad;
+  }
+  .footer_nav_ul {
+    font-size: 15px;
+  }
 }
 @media(max-width: 768px) {
   .examples_slick-list_item_text {
     font-size: 18px;
+  }
+  .cost__fly-el-brackets1, .cost__fly-el-div, .cost__fly-el-element {
+    display: none;
+  }
+  .ft {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer_nav_ul {
+    margin: 46px 0 0;
+  }
+  .footer_contacts {
+    margin-top: 48px;
+  }
+  .footer_soc-links {
+    margin: 25px 0 50px;
   }
 }
 @media(max-width: 636px) {
@@ -888,16 +942,24 @@ header {
     top: 150px;
   }
   .about-me__fly-el-element1 {
+    width: 30px;
+    height: 30px;
     font-size: 16px;
-    right: 100px;
+    left: 200px;
   }
   .about-me__fly-el-hashtag {
     font-size: 28px;
     top: 250px;
   }
+  .examples_slick-list_item {
+    margin: 0 5px;
+  }
 }
 @media (max-width: 380px) {
   .about-me__photo {
     background-image: url('img/head-bg-s.png');
+  }
+  .footer_copyright {
+    font-size: 12px;
   }
 }
